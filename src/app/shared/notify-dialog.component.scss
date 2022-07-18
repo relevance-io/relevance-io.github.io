@@ -1,0 +1,34 @@
+@import '../../theme.scss';
+
+h1 {
+    margin: 0 0 16px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: $color-neutral-dark;
+}
+form {
+    // max-width: 360px;
+    margin: 16px;
+    .email, .user {
+        width: 100%;
+    }
+    .privacy {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 32px;
+    }
+    .captcha {
+        padding: 32px 0 12px 0;
+        text-align: center;
+        height: 78px;
+        margin-left: 32px;
+    }
+    .cta {
+        font-size: 20px;
+        padding: 8px 24px;
+        width: 100%;
+        background-color: $color-success;
+        color: white;
+    }
+}

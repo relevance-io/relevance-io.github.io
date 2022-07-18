@@ -1,0 +1,79 @@
+@import '~@angular/material/theming';
+
+// Material theme
+
+$app-primary: mat-palette($mat-blue-grey);
+$app-accent:  mat-palette($mat-pink, 500, 900, A100);
+$app-warn:    mat-palette($mat-deep-orange);
+$app-theme:   mat-light-theme($app-primary, $app-accent, $app-warn);
+
+// .alternate-theme {
+//   $alternate-primary: mat-palette($mat-light-blue);
+//   $alternate-accent:  mat-palette($mat-yellow, 400);
+//   $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
+//   @include angular-material-theme($alternate-theme);
+// }
+
+// Colors
+// $app-color-search: rgb(147, 156, 158);
+// $app-color-search: #79a94e;
+
+$color-bg : rgb(231, 228, 222);
+$color-bg-dark : #d0ccc5;
+
+$color-white: white;
+$color-black: #212529;
+
+$color-light: #fbfaf8;
+$color-neutral-lightest: #fcfcfc;
+$color-neutral-lighter: #F2F3F4;
+$color-neutral-light: #dad7d2;
+$color-neutral: #bbbbbb;
+$color-neutral-dark: #7c8188;
+$color-neutral-darker: #222222;
+
+$color-primary: #7d717c;
+$color-info: #607d8b;
+$color-success: #79a94e;
+$color-link: #607d8b;
+$color-warning: #f69916;
+$color-danger: #f44336;
+
+$color-beige-light: #f3efe9;
+
+// Relevance.io palette
+
+$theme-bg-3: rgb(231, 228, 222);
+$theme-bg-4: #d0ccc5;
+
+$theme-black: black;
+$theme-white: white;
+
+// $theme-neutral-2: #222222;
+$theme-neutral-2: #0f0402;
+$theme-neutral-3: #404041;
+$theme-neutral-4: #575252;
+$theme-neutral-5: #707070;
+$theme-neutral-6: #7c8188;
+$theme-neutral-7: #999999;
+$theme-neutral-8: #bebdbd;
+$theme-neutral-9: #e3e2de;
+
+$theme-blue-4: #2b9fd9;
+$theme-blue-5: #6cb5d9;
+$theme-blue-6: #6eb7cd;
+$theme-blue-7: #607d8b;
+$theme-blue-7: #2e80b0;
+
+$theme-green-4: #72bbbd;
+$theme-green-5: #74bdb2;
+$theme-green-6: #79a94e;
+
+$theme-yellow-5: #c7b242;
+
+// Fonts
+
+$font-sans: 'Roboto', sans-serif;
+$font-serif: 'Source Serif Pro', serif;
+$font-mono: 'Cutive Mono', monospace;;
+$font-script: 'Patrick Hand SC', cursive;

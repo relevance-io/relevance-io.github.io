@@ -1,0 +1,11 @@
+<section class="privacy" *ngIf="!policyAccepted">
+  <div class="container">
+    <!-- <h1>Please accept our privacy terms</h1> -->
+    <p class="message">
+      By continuing on relevance.io, you are agreeing with our <a href="/privacy-and-terms">Privacy Policy and Terms</a>.
+    </p>
+    <p class="cta">
+      <button mat-button class="accept" (click)="acceptAndClose()">I understand</button>
+      </p>
+  </div>
+</section>

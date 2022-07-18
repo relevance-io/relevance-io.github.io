@@ -1,0 +1,16 @@
+{
+  "locale_en": "English",
+  "locale_fr": "French",
+  "locale_es": "Espanol",
+  "locale_kl": "Klingon",
+  "locale_it": "Italiano",
+
+  "top_nav_brand": "relevance.io",
+  "top_nav_products": "Products",
+  "top_nav_mission": "Mission",
+  "top_nav_labs": "Labs",
+  "top_nav_team": "Team",
+  "top_nav_docs": "Docs",
+  "top_nav_cta": "Notify me"
+
+}

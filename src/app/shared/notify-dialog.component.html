@@ -1,0 +1,46 @@
+<div class="dialog-wrapper hello">
+<!--
+  <button mat-icon-button>
+    <mat-icon>close</mat-icon>
+  </button>
+-->
+
+  <form [formGroup]="formGroup" (submit)="submit()">
+
+    <section>
+      <h1></h1>
+      <!-- <p>We will be releasing products and more lab projects very soon.</p> -->
+    </section>
+
+    <mat-form-field appearance="outline" class="email">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="name@domain.com" formControlName="email">
+      <mat-error *ngIf="!formGroup.get('email').valid">Please enter a valid email address</mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="user">
+      <mat-label>Pick one or more</mat-label>
+      <mat-select multiple formControlName="userType">
+        <mat-option value="group[67506][1]">Developer</mat-option>
+        <mat-option value="group[67506][2]">Data nerd</mat-option>
+        <mat-option value="group[67506][4]">Researcher</mat-option>
+        <mat-option value="group[67506][8]">Business</mat-option>
+        <mat-option value="group[67506][16]">Just curious</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-checkbox color="primary" checked formControlName="optIn">Let me know about <strong>beta programs</strong></mat-checkbox>
+
+    <p class="captcha">
+      <re-captcha (resolved)="recaptchaPass($event)" [siteKey]="recaptchaSiteKey"></re-captcha>
+    </p>
+
+    <p class="privacy">
+      We do not share or sell personal information.<br/>
+      <a href="/privacy-and-terms" target="_top">Check our privacy policy</a>
+    </p>
+
+    <button mat-button class="cta" type="submit">Notify me !</button>
+
+  </form>
+</div>

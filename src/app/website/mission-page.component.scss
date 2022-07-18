@@ -1,0 +1,84 @@
+@import '../../theme.scss';
+
+#mission {
+
+  h1 {
+    font-weight: 400;
+    color: $color-neutral-dark;
+  }
+  h2, p {
+    font-weight: 300;
+    color: $color-neutral-darker;
+  }
+  .intro {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 16px 16px 16px;
+    h1 {
+      margin: 48px 0 48px 0;
+      font-size: 52px;
+      line-height: 72px;
+      max-width: 680px;
+      text-align: center;
+      font-weight: 200;
+      a {
+        font-weight: 300;
+      }
+    }
+    div {
+      max-width: 640px;
+      margin: 0 0 48px 0;
+      text-align: center;
+      h2 {
+        margin: 32px 0 24px 0;
+        font-size: 30px;
+        text-align: center;
+      }
+      p {
+        // max-width: 640px;
+        line-height: 32px;
+        font-size: 18px;
+        text-align: justify;
+        margin: 24px 16px 0 16px;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 48px;
+  }
+  .retroaction,
+  .quality,
+  .privacy
+   {
+    max-width: 25%;
+    min-width: 300px;
+    padding: 32px;
+    margin: 16px 16px 48px 16px;
+    background-color: $color-neutral-lighter;
+    border-top: 1px solid $color-neutral-light;
+    border-bottom: 1px solid $color-neutral-light;
+    h1 {
+       font-size: 16px;
+       text-align: center;
+       text-transform: uppercase;
+       margin: 0 0 16px 0
+     }
+     p {
+       text-align: justify;
+     }
+  }
+  @media only screen and (max-width: 600px) {
+    section {
+      margin: 32px 0 !important;
+    }
+  }
+}
+

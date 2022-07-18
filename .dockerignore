@@ -1,0 +1,12 @@
+README*
+LICENSE*
+Jenkinsfile*
+Dockerfile*
+docs/
+build/
+dist/
+node_modules/
+.gitignore
+.gitmodules
+.dockerignore
+

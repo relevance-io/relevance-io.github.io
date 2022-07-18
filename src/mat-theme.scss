@@ -1,0 +1,4 @@
+@import "~@angular/material/theming";
+@import "theme.scss";
+@include mat-core();
+@include angular-material-theme($app-theme);

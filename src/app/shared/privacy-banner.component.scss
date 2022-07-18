@@ -1,0 +1,54 @@
+@import '../../theme.scss';
+
+.privacy {
+  // display: none !important;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.7);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    color: white;
+    // max-width: 680px;
+    max-width: 100%;
+    padding: 16px 36px 16px 36px;
+    // border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 300;
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .message {
+      font-size: 14px;
+      // text-align: justify;
+      margin: 0 16px 0 0;
+    }
+    a {
+      color: white;
+    }
+    .cta {
+      margin: 0;
+      .accept {
+        background-color: $color-success;      
+      }
+      .settings {
+        background-color: $color-white;
+        color: $color-neutral-dark;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+      .cta {
+        margin-top: 16px;
+      }
+    }
+  }
+}

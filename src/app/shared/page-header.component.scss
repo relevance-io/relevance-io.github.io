@@ -1,0 +1,54 @@
+@import '../../theme.scss';
+
+header {
+  // background-color: $color-bg;
+  .container {
+    height: 72px;
+    display: flex;
+    align-items: center;  
+    h1 {
+      flex-grow: 1;
+      font-size: 16px;
+      line-height: 14px;
+      font-weight: 400;
+      margin: 0;
+      a {
+        text-decoration: none;
+        color: $theme-neutral-4;
+        border: 0;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      h1 {
+        margin-left: 16px;
+      }
+    }
+    .mat-button {
+      font-size: 13px;
+      background-color: $theme-blue-7;
+      border-radius: 99px;
+      color: white;
+      padding: 8px 24px;
+      margin: 0 0 0 16px;
+      line-height: 14px;
+      font-weight: normal;
+    }
+    nav {
+      display: flex;
+      a {
+        font-size: 14px;
+        display: block;
+        padding: 8px 16px;
+        color: $theme-neutral-4;
+        text-decoration: none;
+        border: 0;
+        border-radius: 5px;
+        letter-spacing: 0.5px;
+      }
+      a:hover {
+        background-color: transparent;
+        // color: white;
+      }      
+    }
+  }
+}
